@@ -18,8 +18,6 @@ return schema.validate(data);
 //Login validation
 const loginValidation = (data)=>{
     const schema = Joi.object({
-        userName: Joi.string()
-            .required(),
         email: Joi.string()
             .email()
             .required(),
